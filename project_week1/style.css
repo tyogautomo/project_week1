@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* BACKGROUND HEADER */
 
 div.header-img {
@@ -19,7 +23,7 @@ div.header-img {
 div.jumbotron {
     width: 100%;
     height: 1000px;
-    background-image: url(img/bg1.jpg);
+    background-image: url(img/bg3.png);
     background-size: cover;
     background-position: 0 -200px;
     position: fixed;
@@ -44,9 +48,13 @@ div.header {
     padding-top: 3px;
     padding-bottom: 10px;
     border-bottom: 2px solid whitesmoke;
-    color: rgba(249, 251, 93, 0.719);
+    color: rgba(249, 251, 93, 0.5);
     font-family: Gudea, sans-serif;
     font-size: 70px;
+}
+
+.header span {
+    color: rgba(245, 245, 245, 1);
 }
 
 .header h3 {
@@ -103,7 +111,7 @@ div.nav {
 }
 
 /* ----CODE BAGIAN CONTENTTTT---- */
-
+/* CODE BAGIAN BESTMENU */
 div.content {
     position: relative;
     top: 210px;
@@ -112,7 +120,7 @@ div.content {
 h1.title {
     width: 100%;
     height: 50px;
-    color: rgb(240, 240, 240);
+    color: rgb(255, 244, 85);
     background-color: rgb(29, 29, 29);
     font-family: Gudea;
     text-align: center;
@@ -130,10 +138,11 @@ div.best {
     width: 100%;
     height: 300px;
     background-image: url(img/bestmenu.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: 0 -250px;
     box-sizing: border-box;
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
 }
 
 div.blackbg1 {
@@ -169,6 +178,7 @@ div.blackbg1 {
     margin-top: 140px;
     font-family: "ZCOOL XiaoWei";
     font-size: 50px;
+    text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 div.best:hover p {
@@ -179,17 +189,51 @@ div.best:hover div.blackbg1 {
     opacity: 1;
 }
 
+div.best:hover {
+    background-size: 103%;
+}
+
+/* TOMBOL ORDER */
+
+a.order {
+    font-family: Gudea;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 6px;
+    border: 4px solid rgb(32, 32, 32);
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+a.order:hover {
+    background-color: black;
+    color: white;
+}
+
+a.order:active {
+    border: 4px solid rgb(233, 233, 233)
+}
+
 /* CODE BAGIAN PROMO 1 */
 
 div.promo1 {
     width: 50%;
     height: 300px;
     background-image: url(img/promo1.jpg);
-    background-size: cover;
-    background-position: 0 -70px;
+    background-size: 100%;
+    background-position: 0 -40px;
     box-sizing: border-box;
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.9);
     float: left;
+    transition: 0.3s;
 }
 
 .promo1 p {
@@ -235,17 +279,22 @@ div.promo1:hover div.blackbg2 {
     opacity: 1;
 }
 
+div.promo1:hover {
+    background-size: 103%;
+}
+
 /* CODE BAGIAN PROMO 2 */
 
 div.promo2 {
     width: 50%;
     height: 300px;
     background-image: url(img/promo2.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: 0 -70px;
     box-sizing: border-box;
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.9);
     float: right;
+    transition: 0.3s;
 }
 
 .promo2 p {
@@ -291,6 +340,10 @@ div.promo2:hover div.blackbg2 {
     opacity: 1;
 }
 
+div.promo2:hover {
+    background-size: 103%;
+}
+
 /* WHITE BAR & CLEAR */
 
 div.whitebar {
@@ -298,7 +351,7 @@ div.whitebar {
     width: 80%;
     height: 40px;
     margin: 0 auto;
-    padding-top: 18px;
+    padding-top: 20px;
     box-sizing: border-box;
 }
 
@@ -318,11 +371,12 @@ div.clear {
 div.menu1 {
     width: 50%;
     height: 300px;
-    background-image: url(img/promo1.jpg);
-    background-size: cover;
+    background-image: url(img/menu1.jpg);
+    background-size: 100%;
     background-position: 0 -70px;
     box-sizing: border-box;
     float: left;
+    transition: 0.3s;
 }
 
 .menu1 p {
@@ -368,16 +422,21 @@ div.menu1:hover div.blackbg2 {
     opacity: 1;
 }
 
+div.menu1:hover {
+    background-size: 103%;
+}
+
 /* CODE UNTUK MENU 2 */
 
 div.menu2 {
     width: 50%;
     height: 300px;
-    background-image: url(img/promo1.jpg);
-    background-size: cover;
+    background-image: url(img/menu2.jpg);
+    background-size: 100%;
     background-position: 0 -70px;
     box-sizing: border-box;
     float: left;
+    transition: 0.3s;
 }
 
 .menu2 p {
@@ -423,17 +482,22 @@ div.menu2:hover div.blackbg2 {
     opacity: 1;
 }
 
+div.menu2:hover {
+    background-size: 103%;
+}
+
 /* CODE UNTUK MENU 3 */
 
 div.menu3 {
     width: 50%;
     height: 300px;
-    background-image: url(img/promo1.jpg);
-    background-size: cover;
+    background-image: url(img/menu3.jpg);
+    background-size: 100%;
     background-position: 0 -70px;
     box-sizing: border-box;
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.9);
     float: left;
+    transition: 0.3s;
 }
 
 .menu3 p {
@@ -479,17 +543,22 @@ div.menu3:hover div.blackbg2 {
     opacity: 1;
 }
 
+div.menu3:hover {
+    background-size: 103%;
+}
+
 /* CODE UNTUK MENU 4 */
 
 div.menu4 {
     width: 50%;
     height: 300px;
-    background-image: url(img/promo1.jpg);
-    background-size: cover;
+    background-image: url(img/menu4.jpg);
+    background-size: 100%;
     background-position: 0 -70px;
     box-sizing: border-box;
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.9);
     float: left;
+    transition: 0.3s;
 }
 
 .menu4 p {
@@ -533,4 +602,144 @@ div.menu4:hover p {
 
 div.menu4:hover div.blackbg2 {
     opacity: 1;
+}
+
+div.menu4:hover {
+    background-size: 103%;
+}
+
+/* GENERAL CODE */
+
+.product h2 {
+    text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* ---------------------SERVICE----------------------- */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 0;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+.dark {
+    padding: 15px;
+    /* background: #35424a; */
+    background-color: rgb(29, 29, 29);
+
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+#services h3 {
+    font-family: "ZCOOL XiaoWei";
+}
+
+/*Services**/
+ul#services li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc 2px solid;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    background: #e6e6e6;
+}
+
+.button_1 {
+    height: 34px;
+    background: #e4dad7;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000000;
+    border-radius: 10px;
+}
+
+/* ------CODE UNTUK FOOTER-------- */
+
+footer {
+    width: 100%;
+    float: inline-end;
+    padding: 20px 0px solid;
+    height: 30vh;
+    box-sizing: border-box;
+    background-color: darkgrey solid;
+}
+
+.aboutus {
+    float: left;
+    width: 280px;
+    height: 80px;
+    box-sizing: border-box;
+    text-align: justify;
+    margin-left: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 150;
+    color: grey;
+}
+
+.contact {
+    float: right;
+    width: 300px;
+    height: 80px;
+    box-sizing: border-box;
+    margin-right: 400px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 150;
+    color: grey;
+}
+
+.map {
+    float: right;
+    font-size: 15px;
+    color: grey;
+    margin-right: 30px;
+}
+
+.socmedbut {
+    position: absolute;
+    text-align: left;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.bttn {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: rgba(0, 5px, 15px, -5);
+    overflow: hidden;
+    position: relative;
+}
+
+.bttn i {
+    line-height: 60px;
 }
